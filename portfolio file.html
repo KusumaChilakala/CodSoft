@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kusuma | Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <style>
+            .hero h1 {
+                font-size: 3.5rem; /* Increased font size */
+                font-weight: bold;
+                color: #004aad; /* Optional: Adjust color */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <img src="kusuma.png" alt="Header Logo" class="header-image">
+                <section class="info-sections">
+                    <div class="info-box">Skills</div>
+                    <div class="info-box">Projects</div>
+                    <div class="info-box">Achievements</div>
+                    <div class="info-box">Contact Me</div>
+                </section>
+            </nav>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="content">
+                
+                <h1>Hi all, I'm Kusuma 👋</h1>
+                <p>🚀 Passionate second-year B.Tech Computer Science student with a solid foundation in programming languages like C, Java, and Python.  
+                    I am eager to secure an internship 🎯 to apply my technical skills and problem-solving abilities.  
+                    Passionate about contributing to innovative projects to gain valuable knowledge and industry experience.
+                </p>
+    
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kusuma-chilakala-3634362b9" target="_blank" class="social-btn">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/KusumaChilakala" target="_blank" class="social-btn">
+                        <img src="github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.hackerrank.com/profile/kusumachilakala1" target="_blank" class="social-btn">
+                        <img src="hackerrank.png" alt="HackerRank">
+                    </a>
+                    <a href="https://www.geeksforgeeks.org/user/kusumachildlz5/" target="_blank" class="social-btn">
+                        <img src="gfg.png" alt="GeeksforGeeks">
+                    </a>
+                    <a href="https://leetcode.com/u/kusumachilakala14/" target="_blank" class="social-btn">
+                        <img src="leetcode.png" alt="LeetCode">
+                    </a>
+                </div>
+    
+                <!-- Buttons -->
+                <div class="buttons">
+                    <a href="contact me.html" class="btn">Contact Me</a>
+                    <a href="../kusuma resume.pdf" class="btn secondary">See My Resume</a>
+                </div>
+            </div>
+            
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <img src="image.webp" alt="Developer Illustration">
+            </div>
+        </section>
+    
+    </body>
+</html>
+
+ <!-- Who I Am Section -->
+<div class="who-i-am-section" id="whoIamSection">
+    <h1 class="who-i-am-title">Who I Am</h1>
+    <div class="columns">
+        <!-- Education Box -->
+        <div class="box education">
+            <img src="vishnu.png" alt="Education Logo" class="edu-logo">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Technology</strong></p>
+            <p>Shri Vishnu Engineering College for Women</p>
+            <p>Specialized in Cyber Security and Data Structures.</p>
+        </div>
+        <!-- Interests Box -->
+        <div class="box interests">
+            <h2>Interests</h2>
+            <div class="interest-images">
+                <img src="chess.jpeg" alt="Chess" class="interest-logo">
+                <img src="competetive programming.jpeg" alt="Coding" class="interest-logo">
+                <img src="writing.jpeg" alt="Podcast Writing" class="interest-logo">
+            </div>
+            <p>Chess</p>
+            <p>Competitive Programming</p>
+            <p>Podcast Writer</p>
+        </div>
+    </div>
+</div>
+
+<!-- Who I Am Section -->
+
+<style>
+    /* Who I Am Section Styling */
+    .who-i-am-section {
+        max-width: 1000px;
+        margin: 80px auto;
+        padding: 40px;
+        background: #ffffff; /* White background for the section */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    /* Stylish Title */
+    .who-i-am-title {
+        font-size: 3em;
+        font-weight: bold;
+        color: #004aad;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Two Box Layout Using Grid */
+    .columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        gap: 30px;
+        width: 100%; /* Ensures full width */
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .box {
+        padding: 30px;
+        background: #e3f2fd; /* Light blue shade for boxes */
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    }
+
+    /* Hover Effect */
+    .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .box h2 {
+        color: #004aad;
+        font-size: 2em;
+    }
+
+    .box p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        font-weight: 500;
+    }
+
+    /* Logo Styling for Education & Interests */
+    .edu-logo, .interest-logo {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Interest Images in Row */
+    .interest-images {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .columns {
+            grid-template-columns: 1fr; /* Stack in one column on smaller screens */
+        }
+        .interest-images {
+            flex-wrap: wrap;
+        }
+    }
+</style>
+<!-- Skills Section -->
+<section class="skills-section">
+    <h1 class="skills-title">My Skills</h1>
+    <div class="skills-container">
+        
+        <!-- Left Side Image -->
+        <div class="skills-image">
+            <img src="skills.png" alt="Skills Image">
+        </div>
+
+        <!-- Right Side Skills Grid -->
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h2>Programming</h2>
+                <p>Proficient in C, Java, and Python with a strong understanding of logic building, object-oriented programming, and algorithm development.</p>
+            </div>
+            <div class="skill-box">
+                <h2>Web Development</h2>
+                <p>Experienced in front-end technologies like HTML, CSS, and JavaScript, building responsive and user-friendly websites.</p>
+            </div>
+            <div class="skill-box">
+                <h2>Data Structures & DBMS</h2>
+                <p>Well-versed in problem-solving using Data Structures and Algorithms, with knowledge of database management and SQL.</p>
+            </div>
+            <div class="skill-box">
+                <h2>Soft Skills</h2>
+                <p>Strong communication, teamwork, and adaptability. Quick learner with a passion for problem-solving and innovation.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Skills Section Styling -->
+<style>
+    .skills-section {
+        max-width: 1000px;
+        margin: 80px auto;
+        padding: 40px;
+        background: #ffffff;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .skills-title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #004aad;
+        margin-bottom: 30px;
+    }
+
+    .skills-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .skills-image img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-grid {
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-left: 30px;
+    }
+
+    .skill-box {
+        background-color: #e3f2fd;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #004aad;
+    }
+
+    .skill-box h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #002b5b;
+    }
+
+    .skill-box p {
+        font-size: 1em;
+        font-weight: normal;
+        color: #333;
+    }
+
+    @media (max-width: 768px) {
+        .skills-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr;
+            padding-left: 0;
+        }
+
+        .skills-image {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+<!-- Projects Section -->
+<div class="projects-section" id="projectsSection">
+    <h1 class="projects-title">My Projects</h1>
+    <div class="outer-grid">
+        <div class="projects">
+            <div class="project">
+                <h2>Innovation Distinguishes Leader</h2>
+                <p>A leadership campaign designed to inspire and educate future leaders by focusing on five key leadership pillars. This project involved developing training modules, organizing interactive mentorship programs, and designing promotional content to engage participants.</p>
+            </div>
+            <div class="project">
+                <h2>Sensor Based Automatic Obstacle Detecting Robot</h2>
+                <p>An autonomous robot capable of detecting and avoiding obstacles using ultrasonic sensors. Designed for applications in hazardous environments and automated warehouses, it navigates efficiently without human intervention, ensuring smooth movement and intelligent decision-making.</p>
+            </div>
+            <div class="project full-width">
+                <h2>Svecw Smart Shop</h2>
+                <p>A web application developed to manage campus store statuses for students and administrators. The system includes user authentication, real-time store availability updates, and an admin panel for dynamic management. Built with HTML, CSS, JavaScript, React, and Node.js, the platform offers a seamless and responsive user experience.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Projects Section -->
+
+<style>
+    /* Projects Section Styling */
+    .projects-section {
+        max-width: 1000px;
+        margin: 80px auto;
+        padding: 40px;
+        background: #ffffff; /* White background for the section */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .projects-title {
+        font-size: 3em;
+        font-weight: bold;
+        color: #004aad;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .outer-grid {
+        display: grid;
+        place-items: center;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .project {
+        background: #e3f2fd;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .project h2 {
+        color: #007BFF;
+        margin-bottom: 10px;
+    }
+
+    .project p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .full-width {
+        grid-column: span 2;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .projects {
+            grid-template-columns: 1fr;
+        }
+        .full-width {
+            grid-column: span 1;
+        }
+    }
+</style>
+
+<!-- Achievements Section -->
+<div class="achievements-section" id="achievementsSection">
+    <h1 class="achievements-title">My Achievements</h1>
+    <div class="achievements-grid">
+        <div class="achievement-card">
+            <img src="ffe.png" alt="Amazon Scholar" class="achievement-icon">
+            <h2>Amazon Future Engineer Scholar</h2>
+            <p>Recognized for excellence in technology and leadership.</p>
+        </div>
+        <div class="achievement-card">
+            <img src="hackerrank.png" alt="Hackerrank" class="achievement-icon">
+            <h2>5-Star Coder - Hackerrank</h2>
+            <p>Achieved a top rating in problem-solving and data structures.</p>
+        </div>
+        <div class="achievement-card">
+            <img src="competetive programming.jpeg" alt="2 star in GFG" class="achievement-icon">
+            <h2>Competitive Programming</h2>
+            <p>An avid competitive programmer with 130+ problems solved on LeetCode, 5-star in problem-solving on HackerRank, 2-star on GeeksforGeeks, and a CodeChef rating of 1100+</p>
+        </div>
+        <div class="achievement-card">
+            <img src="vpod.jpg" alt="Vishnu Podcast" class="achievement-icon">
+            <h2>Vishnu Podcast - Content Writer</h2>
+            <p>Serving as a content writer for Vishnu Podcast.</p>
+        </div>
+        <div class="achievement-card">
+            <img src="iet.png" alt="IET Member" class="achievement-icon">
+            <h2>IET Student Member</h2>
+            <p>Active member of the Institute of Engineering and Technology.</p>
+        </div>
+        <div class="achievement-card">
+            <img src="lg.jpg" alt="Scholar" class="achievement-icon">
+            <h2>Life is Good Scholar</h2>
+            <p>Awarded for academic excellence and leadership qualities.</p>
+        </div>
+    </div>
+</div>
+<!-- Achievements Section -->
+
+<style>
+    /* Achievements Section Styling */
+    .achievements-section {
+        max-width: 1100px;
+        margin: 80px auto;
+        padding: 40px;
+        background: #ffffff;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .achievements-title {
+        font-size: 3em;
+        font-weight: bold;
+        color: #004aad;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Achievements Grid */
+    .achievements-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .achievement-card {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    }
+
+    /* Hover Effect */
+    .achievement-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .achievement-card h2 {
+        color: #004aad;
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    .achievement-card p {
+        font-size: 1.1em;
+        color: #333;
+        font-weight: 500;
+    }
+
+    /* Icons */
+    .achievement-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .achievements-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<!-- Reach Out to Me Section -->
+<div class="contact-section">
+    <div class="profile-pic-container">
+        <img src="kusuma_pic.jpg" alt="Your Photo" class="profile-pic">
+    </div>
+    
+    <div class="contact-info">
+        <a href="https://www.linkedin.com/in/kusuma-chilakala-3634362b9" target="_blank" class="social-btn">
+            <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/KusumaChilakala" target="_blank" class="social-btn">
+            <img src="github.png" alt="GitHub">
+        </a>
+        <a href="mailto:kusumachilakala2005@gmail.com" target="_blank" class="email-btn">
+            <img src="mail.png" alt="Gmail" class="small-logo">
+        </a>
+    </div>
+</div>
+
+<style>
+    .contact-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 40px;
+        background-color: #e3f2fd; /* Light blue background */
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .profile-pic-container {
+        width: 150px; /* Adjust size as needed */
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .social-btn img, .email-btn img {
+        width: 40px;  /* Consistent size */
+        height: 40px;
+        transition: transform 0.3s;
+    }
+
+    .social-btn img:hover, .email-btn img:hover {
+        transform: scale(1.1);
+    }
+
+    .small-logo {
+        width: 35px; /* Making Mail logo slightly smaller */
+        height: 35px;
+    }
+</style>
+
+</body>
+</html>
+
+
