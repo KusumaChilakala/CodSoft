@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            padding: 15px 10%;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .nav-links a:hover {
+            color: #222;
+            transform: scale(1.1);
+        }
+        .btn {
+            background-color: #fff;
+            color: #ff758c;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .btn:hover, .btn-outline:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            text-align: left;
+        }
+        .hero img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 30px;
+            border: 4px solid #ff758c;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+        }
+        .hero-content p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+        .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        /* Login Section */
+        .login-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            text-align: center;
+            margin: 30px auto;
+            width: 40%;
+            border-radius: 10px;
+        }
+        .login-section input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .login-section button {
+            background-color: #ff758c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s ease-in-out;
+        }
+        .login-section button:hover {
+            background-color: #ff4a6e;
+            transform: scale(1.05);
+        }
+
+        .about, .services {
+            padding: 50px 10%;
+            text-align: center;
+        }
+        .services {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+        }
+        .service-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .service {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 10px;
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .service:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Landing Page</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="./image.webp" alt="Profile Picture">
+        <div class="hero-content">
+            <h1>Creative Digital Agency</h1>
+            <p>We are passionate about achieving better results for our clients.</p>
+            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn-outline">Request a Consult</a>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <h2>Login</h2>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Enter your password" required>
+        <button>Login</button>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>15 years, we are passionate about achieving better results for our clients.</p>
+        <a href="#" class="btn">Read More</a>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>User Experience</h3>
+            </div>
+            <div class="service">
+                <h3>Creative Design</h3>
+            </div>
+            <div class="service">
+                <h3>Retina Ready</h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
